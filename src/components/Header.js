@@ -1,6 +1,5 @@
 import PropTypes from 'prop-types'
 import Button from "./Button";
-import Tasks from './Tasks';
 
 const Header = ({ title }) => { 
 
@@ -13,7 +12,6 @@ const Header = ({ title }) => {
             {/* <h1 style={headingtyle}>{title}</h1> */}
             <h1> {title}</h1>
             <Button text='Add' onClick={onClick}/>  
-            <Tasks/>
         </header>
     )
 }

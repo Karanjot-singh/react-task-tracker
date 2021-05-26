@@ -10,7 +10,7 @@ const Button = ({ color, text, onClick }) => {
     )
 }
 
-Button.defaultProps = { color: 'black', text: 'Button', }
+Button.defaultProps = { color: 'green', text: 'Button', }
 Button.propTypes = { color: PropTypes.string, text: PropTypes.string, onClick: PropTypes.func }
 
 export default Button

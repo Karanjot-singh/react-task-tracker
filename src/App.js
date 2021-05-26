@@ -7,19 +7,31 @@ import Tasks from './components/Tasks';
 function App() {
   const [tasks, setTasks] = useState([
     {
-        id: 1,
-        text: "Go Fishing"
+      id: 1,
+      text: "Go Fishing",
+      day: "5th July 2021",
     },
     {
-        id: 2,
-        text: "Go Shopping"
-    },],)
+      id: 2,
+      text: "Go Shopping",
+      day: "5th July 2021",
+
+    },])
+
+  //Delete Task
+  //Usually redux or contextAPI is used to manage the state from within the component, here we create functions in app.js
+  const deleteTask = (id) => {
+    //To set the onCLick behaviour of FaTimes icon, Works it's way up here to call function, State gets passed down actions get passed up
+    setTasks(tasks.filter((task) => task.id !== id))
+  }
 
   //Write JS directly inside JSX using {}
   return (
     <div className='container'> {/*Must contain only one root element*/}
-    <Header />
-    <Tasks tasks= {tasks}/>
+      <Header />
+      {tasks.length>0 ? (<Tasks tasks={tasks} onDelete={deleteTask} />)
+      : ('No Tasks Today :D')
+      }
     </div>
   );
 }

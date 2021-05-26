@@ -33,7 +33,5 @@ index.html - the SPA
 <div id="root"> is the gateway to the UI of our react application
 
 index.js is usually the entry point of our app importing react & react DOM
-'''
 
-'''
-
+For styling use, css files, Styled components in react or use direct CSS in JSX

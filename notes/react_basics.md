@@ -1,3 +1,4 @@
+## React Introduction
 https://youtu.be/w7ejDZ8SWv8
 
 React - frmaewrk for UI
@@ -26,8 +27,13 @@ React Hooks are funcitons that let us hook into the React state and lifecycle fe
 useState
 use Effect
 
+## File Strucuture
+
 index.html - the SPA 
 <div id="root"> is the gateway to the UI of our react application
 
-index.js is usually the entry point of our app
+index.js is usually the entry point of our app importing react & react DOM
+'''
+
+'''
 

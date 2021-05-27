@@ -21,12 +21,13 @@ function App() {
     },])
 
   //Button Toggle State
-  
+  const [showAddTask, setShowAddTask] = useState(false)
+
 
   //AddTask
-  const addTask = (task) => { 
-    const id = Math.floor(Math.random()*10000) +1
-    const newTask ={id, ...task}
+  const addTask = (task) => {
+    const id = Math.floor(Math.random() * 10000) + 1
+    const newTask = { id, ...task }
     setTasks([...tasks, newTask])
   }
 
@@ -50,8 +51,8 @@ function App() {
   //Write JS directly inside JSX using {}
   return (
     <div className='container'> {/*Must contain only one root element*/}
-      <Header />
-      <AddTask onAdd={addTask}/>
+      <Header onAdd={() => setShowAddTask(!showAddTask)} showAdd={showAddTask} />
+      {showAddTask && <AddTask onAdd={addTask} />}
       {tasks.length > 0 ? (<Tasks tasks={tasks} onDelete={deleteTask} onToggle={toggleReminder} />)
         : ('No Tasks Today :D')
       }

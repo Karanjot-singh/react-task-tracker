@@ -81,8 +81,11 @@ const result = words.filter(word => word.length > 6);
 //sort(comparator) 1>'A'>'a'
 
 //Callbacks https://javascript.info/callbacks
+a function that is passed to another function as a parameter is a callback function
+
 // TO execute the code when the call back is complete and API has returned the value
 
 // https://yehudakatz.com/2011/08/11/understanding-javascript-function-invocation-and-this/
 
-//Promise
+#### Promises
+

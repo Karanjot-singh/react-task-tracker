@@ -20,6 +20,9 @@ function App() {
       reminder: false
     },])
 
+  //Button Toggle State
+  
+
   //AddTask
   const addTask = (task) => { 
     const id = Math.floor(Math.random()*10000) +1

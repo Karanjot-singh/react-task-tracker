@@ -1,5 +1,5 @@
 import { useState } from 'react'
-
+// Component level state used here
 const AddTask = ({ onAdd }) => {
   const [text, setText] = useState('')
   const [day, setDay] = useState('')

@@ -1,4 +1,14 @@
-# Getting Started with Create React App
+# Task Tracker
+A basic Task tracker made using react & json-server to add and remove tasks.
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/55680995/119835377-689d5e80-bf1e-11eb-91fd-aebec1836c1e.png)
+![image](https://user-images.githubusercontent.com/55680995/119835538-8c60a480-bf1e-11eb-97b2-fe0208d4a5f1.png)
+![image](https://user-images.githubusercontent.com/55680995/119835730-b6b26200-bf1e-11eb-9885-1d413f6bd095.png)
+
+
+
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
